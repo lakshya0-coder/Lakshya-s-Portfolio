@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Lakshya Jangir</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html"><span class="dot"></span>lakshya</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="repositories.html">Repositories</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html" class="nav-cta">Contact →</a>
+    </div>
+    <button class="navtoggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">02 · projects</div>
+      <h1>Featured builds, end to end.</h1>
+      <p>The projects I'd actually walk you through — each one has a live repo, or a working build. Looking for the full repo list instead? <a href="repositories.html" style="text-decoration:underline; color:var(--teal);">Browse all repositories →</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card-grid">
+
+        <div class="card sr">
+          <div class="card-top">
+            <div class="card-title"><a href="https://github.com/lakshya0-coder/AI-Agent" target="_blank" rel="noopener">Gemini AI Chatbot</a></div>
+            <div class="card-stack">Python · Streamlit · Gemini API</div>
+          </div>
+          <div class="card-desc">
+            A conversational chat application built on Streamlit, integrating Google's Gemini API for real-time responses.
+            <ul>
+              <li>Demo mode lets the app run and be tested without live API calls or billing</li>
+              <li>Unit test suite covers core helpers — prompt building, model selection, error formatting</li>
+              <li>Setup docs and a requirements file so it can be cloned and run without guidance</li>
+            </ul>
+          </div>
+          <div class="chips">
+            <span class="chip done">demo mode</span>
+            <span class="chip done">unit tested</span>
+            <span class="chip done">documented</span>
+          </div>
+        </div>
+
+        <div class="card sr sr-delay-1">
+          <div class="card-top">
+            <div class="card-title"><a href="https://github.com/lakshya0-coder/Random-Forest-API-Testing" target="_blank" rel="noopener">Random Forest Prediction API</a></div>
+            <div class="card-stack">Python · Flask · scikit-learn</div>
+          </div>
+          <div class="card-desc">
+            A trained classification model served as a REST API, going from raw health-symptom data to a real-time prediction endpoint.
+            <ul>
+              <li>Random Forest model trained on a health-symptom dataset with scikit-learn and Pandas</li>
+              <li>Flask REST API serves live predictions from the trained model</li>
+              <li>Every endpoint tested with Postman, request/response formats documented in a shared collection</li>
+            </ul>
+          </div>
+          <div class="chips">
+            <span class="chip done">model trained</span>
+            <span class="chip done">API served</span>
+            <span class="chip done">Postman-tested</span>
+          </div>
+        </div>
+
+        <div class="card sr sr-delay-2">
+          <div class="card-top">
+            <div class="card-title"><a href="https://github.com/lakshya0-coder/model_training-and-sqlite-demo" target="_blank" rel="noopener">Model Training + SQLite Demo</a></div>
+            <div class="card-stack">Python · scikit-learn · SQLite</div>
+          </div>
+          <div class="card-desc">
+            A demo project pairing a trained ML model with a lightweight SQLite backend, showing a minimal, self-contained persistence layer around a model's predictions.
+          </div>
+          <div class="chips"><span class="chip done">model + database</span></div>
+        </div>
+
+        <div class="card sr sr-delay-3">
+          <div class="card-top">
+            <div class="card-title"><a href="https://github.com/lakshya0-coder/The-Intelligent-Operations-Commander" target="_blank" rel="noopener">The Intelligent Operations Commander</a></div>
+            <div class="card-stack">Python</div>
+          </div>
+          <div class="card-desc">
+            An operations-focused AI build, scoped around e-commerce logistics and delivery — using AI to help plan and coordinate operational decisions.
+          </div>
+          <div class="chips"><span class="chip done">logistics / ops AI</span></div>
+        </div>
+
+        <div class="card sr">
+          <div class="card-top">
+            <div class="card-title">Forever Together</div>
+            <div class="card-stack">React · Framer Motion · Three.js</div>
+          </div>
+          <div class="card-desc">
+            A wedding planner app built around a shared couple login, built as a single-file React application for a hackathon submission.
+            <ul>
+              <li>Shared couple authentication with a live countdown dashboard</li>
+              <li>Full CRUD across six modules — events, budget, guests, vendors, checklist — visualized with Recharts</li>
+              <li>Rich, spec'd animation work using Framer Motion, GSAP, and Three.js, targeting 60fps with accessibility in mind</li>
+            </ul>
+          </div>
+          <div class="chips">
+            <span class="chip done">hackathon build</span>
+            <span class="chip done">6 modules</span>
+          </div>
+        </div>
+
+        <div class="card sr sr-delay-1">
+          <div class="card-top">
+            <div class="card-title">The Modern Gita Talk</div>
+            <div class="card-stack">Vite · React · TypeScript</div>
+          </div>
+          <div class="card-desc">
+            A bilingual spiritual media site for the Bhagavad Gita, in a deep saffron / ivory / charcoal palette with Cormorant Garamond typography.
+            <ul>
+              <li>Hindi/English bilingual content, built CMS-ready</li>
+              <li>Audio/video media modules, a digital book reader, and donations</li>
+              <li>Same animation-first approach — Framer Motion, GSAP, Three.js, 60fps target</li>
+            </ul>
+          </div>
+          <div class="chips">
+            <span class="chip done">bilingual</span>
+            <span class="chip done">CMS-ready</span>
+          </div>
+        </div>
+
+        <div class="card sr sr-delay-2">
+          <div class="card-top">
+            <div class="card-title"><a href="https://github.com/lakshya0-coder/sik-bot" target="_blank" rel="noopener">Sik-Bot</a></div>
+            <div class="card-stack">Python</div>
+          </div>
+          <div class="card-desc">A bot project — part of the running set of side builds I use to stay hands-on with Python between semesters.</div>
+          <div class="chips"><span class="chip done">side build</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>Sikar, Rajasthan · Built by Lakshya Jangir</div>
+  <div class="foot-links">
+    <a href="mailto:lakshyajangir5656@gmail.com">Email</a>
+    <a href="https://github.com/lakshya0-coder" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/lakshya2800/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://x.com/LakshyaJan44889" target="_blank" rel="noopener">X</a>
+  </div>
+</footer>
+
+<button id="to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
