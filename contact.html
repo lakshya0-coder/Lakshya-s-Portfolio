@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Lakshya Jangir</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html"><span class="dot"></span>lakshya</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="repositories.html">Repositories</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html" class="nav-cta">Contact →</a>
+    </div>
+    <button class="navtoggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">05 · contact</div>
+      <h1>Let's talk about what you're building.</h1>
+      <p>Open to internships, collaborations, and interesting problems. Fastest way to reach me is email.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-box sr">
+        <h2>Have an unclear idea? Let's make it a working product.</h2>
+        <p>lakshyajangir5656@gmail.com</p>
+        <div class="contact-links" style="margin-bottom:36px;">
+          <a href="mailto:lakshyajangir5656@gmail.com">Email ↗</a>
+          <a href="https://github.com/lakshya0-coder" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/lakshya2800/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://x.com/LakshyaJan44889" target="_blank" rel="noopener">X ↗</a>
+        </div>
+
+        <form class="form-grid" id="contact-form" onsubmit="return false;">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="What are you building?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-amber" id="send-btn" style="justify-self:center; margin-top:6px;">Send message</button>
+        </form>
+        <div class="form-note" id="form-note">This opens your email client with the message pre-filled — nothing is stored or sent from this page directly.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>Sikar, Rajasthan · Built by Lakshya Jangir</div>
+  <div class="foot-links">
+    <a href="mailto:lakshyajangir5656@gmail.com">Email</a>
+    <a href="https://github.com/lakshya0-coder" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/lakshya2800/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://x.com/LakshyaJan44889" target="_blank" rel="noopener">X</a>
+  </div>
+</footer>
+
+<button id="to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script>
+  const form = document.getElementById('contact-form');
+  const note = document.getElementById('form-note');
+  form.addEventListener('submit', () => {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    if (!name || !email || !message) return;
+    const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+    window.location.href = `mailto:lakshyajangir5656@gmail.com?subject=${subject}&body=${body}`;
+    note.textContent = 'Opening your email client…';
+    note.style.color = 'var(--amber)';
+  });
+</script>
+</body>
+</html>

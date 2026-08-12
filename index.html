@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakshya Jangir — Full-Stack Developer</title>
+<meta name="description" content="Lakshya Kumar Jangir — Full-stack developer (Python/React) building working products end to end.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html"><span class="dot"></span>lakshya</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="repositories.html">Repositories</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html" class="nav-cta">Contact →</a>
+    </div>
+    <button class="navtoggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding:88px 0 64px;">
+    <div class="wrap">
+      <div class="eyebrow">status: shipping</div>
+      <h1 style="font-family:'Fraunces',serif; font-weight:600; font-size:clamp(38px,6vw,68px); line-height:1.04; letter-spacing:-0.01em; max-width:15ch;">
+        I take an unclear idea and turn it into a <em style="font-style:italic; font-weight:400; color:var(--teal);">working</em> product.
+      </h1>
+      <p class="hero-sub" style="max-width:52ch; margin-top:22px; font-size:17px; color:#2b322a;">
+        Lakshya Kumar Jangir — third-year BCA student and full-stack developer working across Python and React. I build end to end: trained model, served API, working UI, documented and tested well enough that someone else could clone it and run it without me.
+      </p>
+      <div class="hero-actions" style="display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="projects.html">See the work →</a>
+        <a class="btn btn-ghost" href="repositories.html">Browse repositories</a>
+        <a class="btn btn-ghost" href="https://github.com/lakshya0-coder" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+
+      <div class="pipeline" style="margin-top:56px;">
+        <div class="pipeline-head">
+          <span>build.log — how a project actually gets shipped</span>
+          <span class="lights"><span></span><span></span><span></span></span>
+        </div>
+        <div class="pipeline-stages">
+          <div class="stage"><div class="num">01</div><div class="name">Idea</div><div class="status">scoped</div></div>
+          <div class="stage"><div class="num">02</div><div class="name">Model</div><div class="status">trained</div></div>
+          <div class="stage"><div class="num">03</div><div class="name">API</div><div class="status">served</div></div>
+          <div class="stage"><div class="num">04</div><div class="name">UI</div><div class="status">built</div></div>
+          <div class="stage"><div class="num">05</div><div class="name">Ship</div><div class="status">tested</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head sr">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">Recently shipped</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card sr">
+          <div class="card-top">
+            <div class="card-title"><a href="https://github.com/lakshya0-coder/AI-Agent" target="_blank" rel="noopener">Gemini AI Chatbot</a></div>
+            <div class="card-stack">Python · Streamlit · Gemini API</div>
+          </div>
+          <div class="card-desc">A conversational chat app on Streamlit with a demo mode, a unit test suite, and setup docs so someone else can clone and run it unaided.</div>
+          <div class="chips"><span class="chip done">demo mode</span><span class="chip done">unit tested</span></div>
+        </div>
+        <div class="card sr sr-delay-1">
+          <div class="card-top">
+            <div class="card-title"><a href="https://github.com/lakshya0-coder/Random-Forest-API-Testing" target="_blank" rel="noopener">Random Forest Prediction API</a></div>
+            <div class="card-stack">Python · Flask · scikit-learn</div>
+          </div>
+          <div class="card-desc">A trained classification model served as a real-time REST API, every endpoint verified in Postman and documented for reuse.</div>
+          <div class="chips"><span class="chip done">model trained</span><span class="chip done">API served</span></div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:32px;">
+        <a class="btn btn-ghost sr" href="projects.html">View all projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-box sr">
+        <h2>Have an unclear idea? Let's make it a working product.</h2>
+        <p>Open to internships, collaborations, and interesting problems.</p>
+        <div class="contact-links">
+          <a href="contact.html">Get in touch →</a>
+          <a href="https://www.linkedin.com/in/lakshya2800/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://x.com/LakshyaJan44889" target="_blank" rel="noopener">X ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>Sikar, Rajasthan · Built by Lakshya Jangir</div>
+  <div class="foot-links">
+    <a href="mailto:lakshyajangir5656@gmail.com">Email</a>
+    <a href="https://github.com/lakshya0-coder" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/lakshya2800/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://x.com/LakshyaJan44889" target="_blank" rel="noopener">X</a>
+  </div>
+</footer>
+
+<button id="to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
